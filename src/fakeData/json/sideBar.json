@@ -1,0 +1,86 @@
+[
+
+  {
+    "title": "Dashboard",
+    "name": "dashboard",
+    "is_heading": false,
+    "is_active": false,
+    "link": "",
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-home-4-line"
+  },
+
+  {
+    "title": "",
+    "name": "apps",
+    "is_heading": true  ,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": ""
+  },
+ 
+
+  {
+    "title": "Loan Manager",
+    "name": "forms",
+    "is_heading": false,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-profile-line",
+    "children": [
+      {
+        "title": "Form",
+        "is_active": false,
+        "link": "/form",
+        "class_name": "",
+        "icon": "ri-tablet-line"
+      },
+       {
+        "title": "List",
+        "is_active": false,
+        "link": "/tables-datatable",
+        "class_name": "",
+        "icon": "ri-table-line"
+      }
+    ]
+  },
+ 
+    {
+    "title": "Bank Manager",
+    "name": "bank",
+    "is_heading": false,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-mail-line",
+    "children": [
+      {
+        "title": "Bank List",
+        "is_active": false,
+        "link": "/bank_list",
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-inbox-line"
+      },
+      {
+        "title": "Add List",
+        "is_active": false,
+        "link": "/add_bank",
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-edit-line"
+      }
+    ]
+  }
+
+
+  
+
+
+  
+ 
+ 
+]

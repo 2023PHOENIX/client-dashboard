@@ -1,0 +1,106 @@
+/*
+Template: Vito - Responsive Bootstrap 4 Admin Dashboard Template
+Author: iqonicthemes.in
+Design and Developed by: iqonicthemes.in
+NOTE: This file contains the styling for responsive Template.
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+:: General
+:: Input
+:: Loading
+:: Background Color
+:: Background Color Opacity
+:: Text Color
+:: Table Color
+======================================
+[ End table content ]
+======================================*/
+/* General */
+body.dark {background: var(--iq-dark-body-bg); color: var(--iq-dark-body-text)}
+.dark h1,.dark h2,.dark h3,.dark h4,.dark h5,.dark h6 { color: var(--iq-white); }
+
+/* logo */
+.dark .iq-light-logo {display: none;}
+.dark .iq-dark-logo {display: block;}
+
+/* Card Color */
+.dark .iq-card {background: var(--iq-dark-card-bg);}
+
+/* Table Color */
+.dark .table-responsive .table-borderless {border-color: var(--iq-dark-hover-bg);}
+.dark thead tr { background: var(--iq-dark-hover-bg);}
+.dark .table-borderless tbody tr td {border-bottom: 2px solid var(--iq-dark-hover-bg);}
+.dark tr {background: var(--iq-dark-body-bg);}
+.dark td,.dark th{color:var(--iq-dark-body-text)}
+
+
+/* sidebar */
+.dark .iq-sidebar {  background: var(--iq-dark-card-bg); }
+.dark .iq-sidebar-menu .iq-menu li.active>a{background: var(--iq-dark-hover-bg);}
+.dark .iq-sidebar-menu .iq-menu li a:hover{color: var(--iq-dark-body-text); background: var(--iq-dark-hover-bg);} 
+.dark .iq-sidebar-menu .iq-menu li a {color: var(--iq-dark-icon-color);}
+.dark .iq-sidebar-menu .iq-menu li a[aria-expanded="true"]{background: var(--iq-dark-hover-bg);}
+.dark .iq-sidebar-menu .iq-menu .iq-submenu{background: var(--iq-dark-body-bg);}
+
+/* navbar  */
+.dark .iq-navbar-custom {background: var(--iq-dark-card-bg);}
+.dark .iq-top-navbar {background: var(--iq-dark-body-bg);}
+.dark .topbar-menu-icon li a {background: var(--iq-dark-card-bg);}
+.dark .iq-search-bar .search-input{background: var(--iq-dark-hover-bg);}
+.dark a{color: var(--iq-dark-icon-color);}
+.dark a:hover{color: var(--iq-dark-body-text);}
+.dark .navbar-list li>a {color:var(--iq-dark-icon-color)}
+.dark .iq-top-navbar .iq-sub-dropdown {background: var(--iq-dark-hover-bg);}
+.dark .iq-top-navbar .iq-sub-dropdown>.iq-card{background-color: transparent;}
+.dark .navbar-list li .iq-sub-dropdown .iq-sub-card {border-color: var(--iq-dark-card-bg);}
+.dark .navbar-list li .iq-sub-dropdown .iq-sub-card:hover {background-color: var(--iq-dark-body-bg);}
+.dark .navbar-list li .iq-sub-dropdown .iq-sub-card:last-child{border-bottom: none;}
+.dark .btn-primary{color: var(--iq-white);}
+.dark div#lottie-beil svg path,.dark div#lottie-mail svg path,.dark div#lottie-fullscreen svg path {stroke: var(--iq-dark-icon-color);}
+
+/* Search */
+.dark .searchbox-datalink{background: var(--iq-dark-body-bg);}
+
+/* right side bar  */
+.dark .iq-right-fixed{background:var(--iq-dark-card-bg); }
+
+/* Footer */
+.dark .iq-footer{background: var(--iq-dark-card-bg);}
+
+/* Shadow box navbar */
+.dark .iq-navbar-custom{ box-shadow: 0px 2px 8px var(--iq-dark-shadow-1), 0px 4px 16px var(--iq-dark-shadow-2);}
+
+/* Card Shadow */
+.dark .iq-card{box-shadow: 0px 2px 8px var(--iq-dark-shadow-1), 0px 8px 16px var(--iq-dark-shadow-2); }
+
+/* Dropdown */
+.dark .iq-card-header-toolbar .dropdown-toggle i{color: var(--iq-dark-body-text);}
+.dark .dropdown-menu{    background: var(--iq-dark-hover-bg); border:none; box-shadow: 0 4px 8px var(--iq-dark-shadow-1), 0 8px 16px var(--iq-dark-shadow-2);}
+.dark .dropdown-menu .dropdown-item:hover { background:var(--iq-dark-card-bg); color: var(--iq-dark-body-text);}
+.dark .dropdown-menu .dropdown-item{color: var(--iq-dark-icon-color);}
+
+/* Chart  */
+.dark tspan{stroke: var(--iq-body-text);}
+.dark .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut{
+    stroke: var(--iq-primary-light) !important;
+}
+.dark .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut{
+    stroke: var(--iq-info-light) !important;
+}
+
+.dark .ct-grid {
+    stroke: var(--iq-body-text);
+    stroke-width: 1px;
+    stroke-dasharray: 2px;
+}
+.dark .ct-label {
+    /* fill: rgba(0,0,0,.4); */
+    color: var(--iq-body-text);
+    font-size: .75rem;
+    line-height: 1;
+}
+
+/* Dashbord2 */
