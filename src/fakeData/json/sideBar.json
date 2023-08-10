@@ -23,7 +23,7 @@
  
 
   {
-    "title": "Loan Manager",
+    "title": "Loan Type Master",
     "name": "forms",
     "is_heading": false,
     "is_active": false,
@@ -32,16 +32,16 @@
     "icon": "ri-profile-line",
     "children": [
       {
-        "title": "Form",
+        "title": "Add Loan Type",
         "is_active": false,
-        "link": "/form",
+        "link": "/loan-add",
         "class_name": "",
         "icon": "ri-tablet-line"
       },
        {
-        "title": "List",
+        "title": "Loan type List",
         "is_active": false,
-        "link": "/tables-datatable",
+        "link": "/loan-list",
         "class_name": "",
         "icon": "ri-table-line"
       }
@@ -49,7 +49,7 @@
   },
  
     {
-    "title": "Bank Manager",
+    "title": "Bank Master",
     "name": "bank",
     "is_heading": false,
     "is_active": false,
@@ -60,7 +60,7 @@
       {
         "title": "Bank List",
         "is_active": false,
-        "link": "/bank_list",
+        "link": "/bank-list",
         "class_name": "",
         "is_icon_class": true,
         "icon": "ri-inbox-line"
@@ -68,7 +68,7 @@
       {
         "title": "Add List",
         "is_active": false,
-        "link": "/add_bank",
+        "link": "/bank-add",
         "class_name": "",
         "is_icon_class": true,
         "icon": "ri-edit-line"

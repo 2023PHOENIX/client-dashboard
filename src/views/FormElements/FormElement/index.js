@@ -14,8 +14,10 @@ import {
   Input,
   Button,
 } from "reactstrap";
+
 import { index } from "../../../config/pluginsInit";
 import ReactQuill from 'react-quill';
+import "./extra.css"
 import 'react-quill/dist/quill.snow.css'; // Import the styles
 class Index extends React.Component {
   constructor(props) {
@@ -43,12 +45,13 @@ class Index extends React.Component {
     // Handle form submission, including selected files
     console.log("Form submitted with files:", this.state.selectedFiles);
   };
-    render() {
+  render() {
+ 
       const { selectedFiles } = this.state;
     return (
       <>
         <Row>
-          <Col sm={12} lg={6}>
+          <Col sm={12} lg={10}>
             <Card className={"iq-card"}>
               <div className={"iq-card-header d-flex justify-content-between"}>
                 <CardTitle className={"card-title"}>
@@ -60,10 +63,7 @@ class Index extends React.Component {
               </div>
 
               <CardBody className={"iq-card-body"}>
-                <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                  vulputate, ex ac venenatis mollis, diam nibh finibus leo
-                </CardText>
+                
                 <UncontrolledCollapse toggler="#collapse2">
                   <Card>
                     <kbd className="bg-dark">
@@ -156,8 +156,8 @@ rows="5"></textarea>
                       type="text"
                       className="form-control"
                       id="exampleInputText1"
-                      defaultValue="Mark Jhon"
-                      placeholder="Enter Name"
+                      defaultValue=""
+                      placeholder="Enter Loan"
                     />
                   </FormGroup>
                   {/* <FormGroup className="form-group">
@@ -170,17 +170,7 @@ rows="5"></textarea>
                       placeholder="Enter Email"
                     />
                   </FormGroup> */}
-                  <FormGroup className="form-group">
-                    <span> DropDown</span>
-                    <select className="form-control">
-                      <option value="" disabled selected>
-                        Select your option
-                      </option>
-                      <option value="active">Active</option>
-                      <option value="inactive">Inactive</option>
-                    </select>
-                  </FormGroup>
-              
+
                   {/* <FormGroup className="form-group">
                     <Label htmlFor="exampleInputPassword3">
                       Password Input
@@ -255,11 +245,22 @@ rows="5"></textarea>
                       Description
                     </Label>
                     <ReactQuill
+                      className="custom-quill"
                       value={this.state.content}
                       onChange={this.handleEditorChange}
                       modules={Index.modules}
                       formats={Index.formats}
                     />
+                  </FormGroup>
+                  <FormGroup className="form-group">
+                    <span> Status</span>
+                    <select className="form-control">
+                      <option value="" disabled selected>
+                        Select your option
+                      </option>
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
                   </FormGroup>
                   <FormGroup>
                     <form onSubmit={this.handleSubmit}>
@@ -274,13 +275,13 @@ rows="5"></textarea>
                           accept="image/*, video/*"
                           multiple
                           onChange={this.handleFileChange}
-                          
                         />
                       </FormGroup>
-                      <button type="submit" className="btn btn-primary">
-                        Upload
-                      </button>
+                        {/* <button type="submit" className="btn btn-primary">
+                          Upload
+                        </button> */}
                     </form>
+
                     <FormGroup>
                       <h3>Selected Files:</h3>
                       <ul>
@@ -292,7 +293,7 @@ rows="5"></textarea>
                   </FormGroup>
 
                   <Button color={"primary"}>Submit</Button>
-                  <Button className="btn iq-bg-danger">cancle</Button>
+                  {/* <Button className="btn iq-bg-danger">cancle</Button> */}
                 </Form>
               </CardBody>
             </Card>

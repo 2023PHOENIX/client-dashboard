@@ -26,6 +26,10 @@ class AddBank extends Component {
 
   handleInputChange = (event) => {
     const { name, value } = event.target;
+    console.log(name);
+    if (name === "gstIn" || name === "panId") {
+   
+    }
     this.setState({ [name]: value });
   };
 
@@ -71,7 +75,6 @@ class AddBank extends Component {
                     onChange={this.handleInputChange}
                     placeholder="Enter your bank name"
                   />
-            
                 </FormGroup>
                 <FormGroup className="form-group">
                   <Label htmlFor="address">
@@ -114,7 +117,6 @@ class AddBank extends Component {
                     onChange={this.handleInputChange}
                     placeholder="Enter state code"
                   />
-
                 </FormGroup>
                 <FormGroup className="form-group">
                   <Label htmlFor="gstIn">
@@ -123,9 +125,10 @@ class AddBank extends Component {
                   <Input
                     type="text"
                     className="form-control"
+
                     id="gstIn"
                     name="gstIn"
-                    value={this.state.gstIn}
+                    value={this.state.gstIn.toUpperCase()}
                     onChange={this.handleInputChange}
                     placeholder="Enter your GSTIn Number"
                   />
@@ -143,7 +146,7 @@ class AddBank extends Component {
                     className="form-control"
                     id="panId"
                     name="panId"
-                    value={this.state.panId}
+                    value={this.state.panId.toUpperCase()}
                     onChange={this.handleInputChange}
                     placeholder="Enter Your Pan Number"
                   />
@@ -154,9 +157,9 @@ class AddBank extends Component {
                 <Button color="primary" type="submit">
                   Submit
                 </Button>
-                <Button className="btn iq-bg-danger" type="reset">
+                {/* <Button className="btn iq-bg-danger" type="reset">
                   Cancel
-                </Button>
+                </Button> */}
               </Form>
             </CardBody>
           </Card>

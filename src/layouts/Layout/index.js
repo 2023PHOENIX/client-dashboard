@@ -734,7 +734,7 @@ class Index extends React.Component {
                         <Route path="/notification" component={Notifications} />
 
                         <Route path="/tables-basic" component={BasicTable} />
-                        <Route path="/tables-datatable" component={DataTable} />
+                        <Route path="/loan-list" component={DataTable} />
                         <Route
                           path="/tables-editable"
                           component={EditableTable}
@@ -745,7 +745,7 @@ class Index extends React.Component {
                         <Route path="/chart-apex" component={ApexChart} />
 
                         {/* Form Elements */}
-                        <Route path={"/form"} component={FormElement} />
+                        <Route path={"/loan-add"} component={FormElement} />
                         <Route
                           path={"/form-validation"}
                           component={FormValidation}
@@ -778,8 +778,8 @@ class Index extends React.Component {
                         <Route path="/pricing-one" component={PricingOne} />
                         <Route path="/faq" component={FAQPage} />
                         {/* routes by Abhishek */}
-                        <Route path="/bank_list" component={ BankList } />
-                        <Route path="/add_bank" component={ AddBank } />
+                        <Route path="/bank-list" component={ BankList } />
+                        <Route path="/bank-add" component={ AddBank } />
 
                         <Route path="/" exect component={Dashboard1} />
                       </Switch>
